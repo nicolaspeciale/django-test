@@ -1,0 +1,8 @@
+<h1>La mia libreria</h1>
+<dl>
+{% for libro in libri %}
+<dt><strong>"{{ libro.titolo }}"</strong></dt>
+<dd><em>{{ libro.autore }}</em> - {{ libro.genere }}</dd>
+<dd><small>acquistato il {{ libro.genere }}</small></dd>
+{% endfor %}
+</dl>
